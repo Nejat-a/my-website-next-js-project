@@ -1,0 +1,15 @@
+.services {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 860px) {
+  .row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

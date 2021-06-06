@@ -1,0 +1,34 @@
+.mainFooter {
+  padding: 4rem;
+  background-color: var(--primary-color);
+}
+
+.footerLogo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footerLogo img {
+  width: 50px;
+  height: auto;
+}
+
+.mainFooter p {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.social {
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footerIcon {
+  color: var(--white);
+}
+
+.footerIcon:hover {
+  color: var(--third-color);
+}

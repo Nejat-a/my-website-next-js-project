@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #77018f;
+  --secondary-color: #6a0080;
+  --hover-color: #ffd900;
+  --third-color: #ffc75f;
+  --fourth-color: #f9f871;
+  --text-color: #333;
+  --gray-light: rgb(179, 179, 179);
+  --white: #ffffff;
+  --white-smoke: #fafafa;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--white-smoke);
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+p {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+section {
+  padding: 4rem 0;
+}
+
+.link {
+  color: var(--primary-color);
+}
+
+.link:visited {
+  color: var(--primary-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  color: var(--primary-color);
+}
+
+.inner {
+  width: 80%;
+  max-width: 1980px;
+  margin: 0 auto;
+}

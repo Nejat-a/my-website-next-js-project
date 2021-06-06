@@ -9,6 +9,9 @@ export const Header = () => {
   const handleClick = () => {
     setClick(!click);
   };
+  const closeNav = () => {
+    setClick(false);
+  };
   return (
     <header className={styles.mainHeader}>
       <div className="logo">
@@ -30,7 +33,7 @@ export const Header = () => {
       </button>
 
       <Navbar />
-      {click ? <MobileNav /> : ""}
+      {click ? <MobileNav onClick={closeNav} /> : ""}
     </header>
   );
 };

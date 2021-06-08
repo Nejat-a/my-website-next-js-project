@@ -4,6 +4,7 @@ import { Navbar } from "../layout/Navbar";
 import { useState, useEffect } from "react";
 import { MobileNav } from "./MobileNav";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 export const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -16,11 +17,14 @@ export const Header = () => {
     <header className={styles.mainHeader}>
       <div className="logo">
         <Link href="/">
-          <img
-            className={styles.logoImg}
-            src="https://nejat.no/img/svg/nejat-logo-white.svg"
-            alt="logo"
-          />
+          <a>
+            <Image
+              src="/images/nejat-logo-white.svg"
+              alt="logo"
+              width={50}
+              height={58}
+            />
+          </a>
         </Link>
       </div>
 

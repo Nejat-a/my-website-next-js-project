@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 export const Footer = () => {
   const getCurrentYear = () => {
@@ -13,8 +14,15 @@ export const Footer = () => {
   return (
     <footer className={styles.mainFooter}>
       <div className={styles.footerLogo}>
-        <Link href="#top">
-          <img src="https://nejat.no/img/svg/nejat-logo-white.svg" alt="logo" />
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/nejat-logo-white.svg"
+              alt="logo"
+              width={50}
+              height={58}
+            />
+          </a>
         </Link>
       </div>
       <p>Org: 925 241 601</p>

@@ -6,8 +6,10 @@ export const ServicesSection = () => {
       <div className="inner">
         <div className={styles.row}>
           <ServicesCard
-            imgSrc="https://nejat.no/img/svg/internet-icon.svg"
+            imgSrc="/images/internet-icon.svg"
             imgAlt="internet icon"
+            width={50}
+            height={50}
             title="Hjemmeside"
             description="Rask og brukervennlig hjemmeside med et rent og oversiktlig
             design. Alle hjemmesidene er grunnleggende
@@ -17,8 +19,10 @@ export const ServicesSection = () => {
           />
 
           <ServicesCard
-            imgSrc="https://nejat.no/img/svg/design-tools-icon.svg"
+            imgSrc="/images/design-tools-icon.svg"
             imgAlt="design tools icon"
+            width={50}
+            height={50}
             title="Design"
             description="Jeg designer logo, ikoner, bannere og komplett hjemmeside design.
             Jeg fokuserer på enkel, ren design som er lett forståelig og
@@ -28,8 +32,10 @@ export const ServicesSection = () => {
           />
 
           <ServicesCard
-            imgSrc="https://nejat.no/img/svg/wall-icon.svg"
+            imgSrc="/images/wall-icon.svg"
             imgAlt="wall icon"
+            width={50}
+            height={50}
             title="Merkevarebygging"
             description=" Har du en nyetablert bedrift? Jeg kan hjelpe deg med å bygge opp
             din visuelle profil og identitet. Dette omfatter farger, logo,

@@ -1,4 +1,5 @@
 import styles from "../../../styles/HeroSection.module.css";
+import Image from "next/image";
 
 export const HeroSection = () => {
   return (
@@ -10,9 +11,11 @@ export const HeroSection = () => {
         </div>
 
         <div className={styles.heroImg}>
-          <img
-            src="https://nejat.no/img/svg/hero-img-white.svg"
+          <Image
+            src="/images/hero-img-white.svg"
             alt="image of digital devices"
+            width={1398}
+            height={863}
           />
         </div>
       </div>

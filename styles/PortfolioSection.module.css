@@ -12,6 +12,10 @@
   border-bottom: 1px solid var(--gray-light);
 }
 
+.portfolio h2 {
+  text-align: center;
+}
+
 @media screen and (min-width: 860px) {
   .row {
     flex-direction: row;

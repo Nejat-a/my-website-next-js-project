@@ -21,6 +21,7 @@
 }
 
 .colH3 {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
 }
@@ -30,6 +31,7 @@
 }
 
 .colH4 {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
 }

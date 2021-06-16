@@ -44,7 +44,7 @@ export const ContactSection = () => {
           console.log(response);
           if (response.status === 200) {
             setsuccessMsg(
-              "Takk for at du tok kontakt! Eposten din blir besvart fortløpende :)"
+              "Takk for at du tok kontakt! Eposten din blir besvart fortløpende :) siden blir laster på nytt om 3 sekunder"
             );
             setTimeout(() => document.location.reload(), 3000);
           } else {
@@ -65,7 +65,7 @@ export const ContactSection = () => {
         <h2>
           Ønsker du et samarbeid eller har du noen spørsmål? Skriv til meg!
         </h2>
-        <div className={styles.successMsg}>{successMsg}</div>
+
         <div className={styles.formArea}>
           <form onSubmit={handleSubmit(onSubmit)} id="form">
             <div className={styles.inputFields}>
@@ -97,6 +97,9 @@ export const ContactSection = () => {
               {errors.message && <span>{errors.message.message}</span>}
             </div>
 
+            <div className={styles.successMsg} id="thankYou">
+              {successMsg}
+            </div>
             <button className={styles.btnPurpleFullWidth} type="submit">
               Send
             </button>

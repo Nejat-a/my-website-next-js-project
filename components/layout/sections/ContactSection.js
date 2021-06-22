@@ -107,13 +107,15 @@ export const ContactSection = () => {
           </form>
         </div>
         <div className={styles.phoneArea}>
-          <h2>
-            Vil du heller slå av en part over telefon? Ring meg på:
-            (Telefonttid: man-fre 10:00 - 17:00)
-          </h2>
+          <h2>Vil du heller slå av en part over telefon? Ring meg på:</h2>
           <a href="tel:98475482" className={styles.phone}>
             <FaMobileAlt /> 984 75 482
           </a>
+
+          <p className={styles.phoneHrs}>
+            {" "}
+            (Telefontid: man-fre 10:00 - 17:00)
+          </p>
         </div>
       </div>
     </section>

@@ -84,7 +84,6 @@
 }
 
 .phone {
-  margin-top: 1rem;
   display: block;
   color: #77018f;
   font-size: 1.5rem;
@@ -95,4 +94,9 @@
 
 .phoneArea i {
   display: block;
+}
+
+.phoneHrs {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
 }

@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
+import { FaMobileAlt } from "react-icons/fa";
 
 export const ContactSection = () => {
   const [error, seterror] = useState(null);
@@ -104,6 +105,15 @@ export const ContactSection = () => {
               Send
             </button>
           </form>
+        </div>
+        <div className={styles.phoneArea}>
+          <h2>
+            Vil du heller slå av en part over telefon? Ring meg på:
+            (Telefonttid: man-fre 10:00 - 17:00)
+          </h2>
+          <a href="tel:98475482" className={styles.phone}>
+            <FaMobileAlt /> 984 75 482
+          </a>
         </div>
       </div>
     </section>
